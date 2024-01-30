@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peanutbutter Panic</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="startscreen">
+        <h1>Peanutbutter Panic</h1>
+        <br>
+        <div>
+            <a id="normal">Normal</a>
+            <a id="timed">Timed</a>
+            <a id="random">Random Selection</a>
+            <a id="info">Info</a>
+        </div>
+        <br>
+        <h2 class="collected">Golden Bread Collected: 0</h2>
+    </div>
+    <div>
+        <!-- The use of class invisible came from Jesse -->
+        <div class="score invisible normalscreen randomscreen">
+            <p id="movescounter">0 Moves </p>
+            <p>40 Moves <img src="images/goldenbread.png" alt="Golden Bread" class="goldenbread"> <img src="images/goldenbread.png" alt="Golden Bread" class="goldenbread"> <img src="images/goldenbread.png" alt="Golden Bread" class="goldenbread"></p>
+            <p>55 Moves <img src="images/goldenbread.png" alt="Golden Bread" class="goldenbread"> <img src="images/goldenbread.png" alt="Golden Bread" class="goldenbread"></p>
+            <p>60 Moves <img src="images/goldenbread.png" alt="Golden Bread" class="goldenbread"></p>
+        </div>
+            <div class="score invisible timedscreen">
+                <p id="secondscounter">0s </p>
+                <p>9s <img src="images/goldenbread.png" alt="Golden Bread" class="goldenbread"> <img src="images/goldenbread.png" alt="Golden Bread" class="goldenbread"> <img src="images/goldenbread.png" alt="Golden Bread" class="goldenbread"></p>
+                <p>17s <img src="images/goldenbread.png" alt="Golden Bread" class="goldenbread"> <img src="images/goldenbread.png" alt="Golden Bread" class="goldenbread"></p>
+                <p>25s <img src="images/goldenbread.png" alt="Golden Bread" class="goldenbread"></p>
+            </div>
+        <div class="invisible playingfield">
+            <section>
+                <div class="jar" style="position: absolute; left: 800px; top: 300px">
+                    <img src="images/peanutbutterjar.png" alt="">
+                </div>
+                <div class="plate" style="position: absolute; left: 350px; top: 400px;">
+                    <img src="images/plate.png" alt="">
+                </div>
+                <div class="bag" style="position: absolute; left: 100px; top: 300px;">
+                    <img src="images/breadbag.png" alt="">
+                </div>
+                <div class="clip" style="position: absolute; left: 100px; top: 300px;">
+                    <img src="images/breadclip.png" alt="">
+                </div>
+                <div class="bread" style="position: absolute; left: 100px; top: 400px;">
+                    <img src="images/bread.png" alt="" class="breadImg">
+                </div>
+                <div class="lid" style="position: absolute; left: 800px; top: 300px;">
+                    <img src="images/peanutbutterlid.png" alt="">
+                </div>
+                <div class="knife" style="position: absolute; left: 600px; top: 400px;">
+                    <img src="images/knife.png" alt="" class="knifeImg">
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="infoscreen invisible">
+        <h2>Info</h2>
+        <p>
+            The objective of this game is to get a slice of bread and put peanutbutter on it.<br>There are 3 modes: Normal, Timed and Random Selection. 
+            On normal mode you need to select one of the 4 items: Clip, Bread, Knife and lid. Once one of the items is selected you can move them with wasd or the arrow keys. 
+            On normal mode its the objective to use a little moves as possible. On timed mode its the same as Normal but you need to do it as fast as possible. 
+            Random Selection on the other hand is quite different, you cannot select an item yourself. It will be selected for you at random. 
+            You then need to, in as little moves as possible, also get a slice of bread with peanutbutter. 
+        </p>
+    </div>
+    <div class = "won invisible">
+        <p>Congratulations you won!</p>
+        <p class="statistics"></p>
+    </div>
+    <div class="back invisible">
+        <a>back</a>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

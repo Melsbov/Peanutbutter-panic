@@ -1,0 +1,140 @@
+* {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 150px;
+    color: rgb(117, 82, 58);
+}
+
+h2 {
+    font-size: 60px;
+    color: rgb(117, 82, 58);
+}
+
+a {
+    border-radius: 20px;
+    color: rgb(24, 23, 23);
+    font-size: 40px;
+    padding: 9px 15px 9px 15px;
+    background-color: rgb(153, 113, 86);
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    background-color: rgb(24, 23, 23);
+}
+
+p {
+    font-size: 50px;
+    color: white;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(24, 23, 23);
+}
+
+.startscreen {
+    margin-top: 250px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.startscreen div{
+    width: 800px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.infoscreen {
+    width: 1200px;
+    margin-top: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.infoscreen p{
+    align-items: center;
+    font-size: 25px;
+}
+
+.back {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.playingfield {
+    display: flex;
+    justify-content: center;
+}
+
+.score {
+    width: 1300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+section {
+    margin-top: auto;
+    margin-bottom: auto;
+    background-image: url(background.png);
+    position: relative;
+    width: 1000px;
+    height: 600px;
+}
+
+.clip, .bread, .lid, .knife {
+    height: 100px;
+    width: 100px;
+    position: absolute; 
+}
+
+.plate {
+    height: 100px;
+    width: 200px;
+}
+
+.bag, .jar {
+    height: 200px;
+    width: 100px;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.active {
+    outline: solid;
+    outline-width: 5px;
+    outline-color: rgb(81, 134, 0);
+}
+
+.goldenbread {
+    height: 50px;
+    width: 50px;
+}
+
+.invisible {
+    display: none;
+}
+
+.won {
+    margin-top: 250px;
+    text-align: center;
+    width: 1300px;
+}
